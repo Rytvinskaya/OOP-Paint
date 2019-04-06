@@ -186,8 +186,8 @@ namespace lab_rab_1
         private void fMain_Load(object sender, EventArgs e)
         {
             pb = pbHolst;
-            myIm.bmp = new Bitmap(550, 470);
-            myIm.bmp_2 = new Bitmap(550, 470);
+            myIm.bmp = new Bitmap(pbHolst.Width, pbHolst.Height);
+            myIm.bmp_2 = new Bitmap(pbHolst.Width, pbHolst.Height);
             myIm.figures = new List<Shape>();
             OpenFromFile();
             pb.Image = myIm.bmp;
